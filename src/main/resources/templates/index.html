@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts/layouts.html :: header"></head>
+<body>
+<nav th:replace="layouts/layouts.html :: main-nav"></nav>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1>RYAN OH</h1>
+        <p class="lead text-muted">
+            안녕하세요. 회원가입하시려면 아래 버튼을 눌러주세요.
+        </p>
+        <p>
+            <a th:href="@{/sign-up}" class="btn btn-primary my-2">회원가입</a>
+        </p>
+    </div>
+</section>
+
+<footer th:replace="layouts/layouts.html :: footer"></footer>
+</body>
+</html>
